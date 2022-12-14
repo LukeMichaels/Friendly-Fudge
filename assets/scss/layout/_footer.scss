@@ -1,0 +1,123 @@
+footer {
+	width: 100%;
+	padding: 26px 33px 26px 33px;
+	margin: 0 auto;
+	background-color: $light-green;
+	border-top: 6px solid $red;
+
+	.footer-wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		max-width: 1520px;
+		margin: 0 auto;
+		@include respond-to(b-880) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+
+	.mfa {
+		max-width: 370px;
+		margin: auto 0 auto auto;
+		@include respond-to(b-880) {
+			margin: 0 auto 0 auto;
+		}
+
+		img {
+			max-width: 200px;
+			margin-bottom: 10px;
+			@include respond-to(b-880) {
+				display: block;
+				margin: 0 auto 10px auto;
+			}
+		}
+
+		p {
+			color: $black;
+			font-family: $regular-font-stack;
+			font-size: 16px;
+			line-height: 21.86px;
+			font-weight: $regular;
+			@include respond-to(b-880) {
+				text-align: center;
+			}
+		}
+
+	} // .mfa
+
+	.contact {
+		margin: auto auto auto 0;
+		color: #FFFFFF;
+		font-family: $heading-font-stack;
+		font-size: 20px;
+		line-height: 24.34px;
+		font-weight: 700;
+		@include respond-to(b-880) {
+			width: 100%;
+			margin: 0 auto 20px;
+			text-align: center;
+		}
+		@include respond-to(b-770) {
+			font-size: 16px;
+			line-height: 18px;
+		}
+		@include respond-to(b-695) {
+			width: 100%;
+			margin: 0 auto 20px auto;
+			text-align: center;
+		}
+
+		a {
+			color: #FFFFFF;
+			-webkit-transition: color 1000ms linear;
+			-ms-transition: color 1000ms linear;
+			transition: color 1000ms linear;
+			text-decoration: none;
+			&:hover {
+				color: $orange;
+			}
+		}
+
+	} // .contact
+
+	.social-buttons {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		margin: auto 0 auto auto;
+		@include respond-to(b-695) {
+			width: 100%;
+			justify-content: center;
+			margin: 0 auto 0 auto;
+		}
+
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 43px;
+			height: 43px;
+			margin: auto 13px;
+			border-radius: 50%;
+			color: $light-green;
+			background-color: $white;
+			-webkit-transition: background-color 1000ms linear;
+			-ms-transition: background-color 1000ms linear;
+			transition: background-color 1000ms linear;
+			@include respond-to(b-350) {
+				margin: auto 5px;
+			}
+			&:hover {
+				background-color: $orange;
+			}
+
+			i {
+				color: $light-green;
+			}
+
+		} // a
+
+	} // .social-buttons
+
+} // footer

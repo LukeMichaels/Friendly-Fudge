@@ -1,0 +1,30 @@
+body {
+	font-family: $regular-font-stack;
+	font-size: 18px;
+}
+h1, h2, h3 {
+	font-family: $heading-font-stack;
+	font-weight: $bold;
+}
+h1 {
+	font-size: 20px;
+}
+h2 {
+	font-size: 20px;
+}
+h3 {
+	font-size: 20px;
+}
+p, li {
+	font-size: 18px;
+	line-height: 24px;
+}
+b, strong {
+	font-weight: $bold;
+}
+em, i {
+	font-style: italic;
+}
+a {
+	text-decoration: none;
+}

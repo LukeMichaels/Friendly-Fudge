@@ -1,0 +1,27 @@
+// Colors
+$white: #FFFFFF;
+$black: #090F0D;
+$green: #7FC7AF;
+$pink: #FF9E9D;
+
+// Fonts
+$heading-font-stack: 'motley_forcesregular';
+$regular-font-stack: 'Open Sans', sans-serif; // font weight 400 - regular, 700 - bold
+
+// Weights
+$bold: 700;
+$regular: 400;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+/// @see {mixin} respond-to
+$breakpoints: (
+	'b-1370': (max-width: 1370px),
+);
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///	 $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
